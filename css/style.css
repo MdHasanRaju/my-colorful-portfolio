@@ -1,0 +1,565 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* google-font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header-section */
+header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    padding: 20px 0px;
+    z-index: 999;
+}
+
+.container{
+    width: 1140px;
+    margin: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav div{
+    display: inline-block;
+}
+
+nav div a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+    
+}
+
+nav ul li a:hover{
+    color: crimson;
+}
+
+nav div a span{
+    color: crimson;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    display:inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+
+
+/* banner-section */
+.banner-section{
+   /*  background-image:url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    display: flex;
+    background: url(../images/banner.jpg) no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner-section .container{
+
+}
+
+.home-content{
+   
+}
+
+
+.home-content .text-1{
+    font-size: 27px;
+    color: #fff;
+}
+.home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin: -3px;
+    color: #fff;
+}
+.home-content .text-3{
+    font-size: 40px;
+    margin-left: -3px;
+    color: #fff;
+}
+
+.home-content .text-3 span{
+    color: crimson;
+}
+
+.home-content  a{
+    display: inline-block;
+    text-decoration: none;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.home-content a:hover{
+    background-color: transparent;
+    color: crimson;
+   
+}
+
+/* aboutme-section */
+.about-section{
+    padding: 100px 0px;
+}
+
+.about-container{
+   
+}
+
+.about-title{
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+   
+}
+.about-title h2{
+    font-size: 40px;
+    font-weight: 500;
+     font-family: 'Ubuntu', sans-serif;
+}
+.about-title p{
+    font-size: 20px;
+    color: crimson;
+    font-weight: 400;
+}
+.about-content{
+    display: flex;
+    align-items: center;
+}
+.about-content .left-column{
+    width: 45%;
+}
+.about-content .left-column img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about-content .right-column{
+    width: 55%;
+}
+.about-content .right-column h3{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about-content .right-column p{
+    text-align: justify;
+    line-height: 30px;
+}
+.about-content .right-column a{
+    display: inline-block;
+    text-decoration: none;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border: 2px solid crimson;
+    border-radius: 6px;
+    transition: all .3s ease;
+}
+.right-column a:hover{
+    background-color: transparent;
+    color: crimson;
+}
+
+
+
+   /* service-section */
+/* --------------------- */
+.service-section{ 
+    background: #111;
+    color: #fff;
+    padding: 100px 0;
+}
+.service-section .container{}
+.service-title{
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.service-title h2{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.service-title p{
+    font-size: 20px;
+    color: crimson;
+}
+.services{
+    display: flex;
+    justify-content: space-between;
+}
+.service-clm{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 60px 0px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+.service-clm:hover{
+    transform: scale(1.05);
+    background: crimson;
+
+}
+.service-clm i{
+    font-size: 50px;
+    margin-bottom: 5px;
+    color: crimson;
+}
+
+.service-clm:hover i{
+    color: #fff;
+}
+
+.service-clm h3{
+     font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.service-clm p{
+}
+
+
+/* team-section */
+.team-section{
+    background: #111;
+    color: #fff;
+    padding: 100px 0;
+}
+.team-title{
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.team-title h2{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.team-title p{
+    font-size: 20px;
+    color: crimson;
+}
+.teams{
+    display: flex;
+    justify-content: space-between;
+}
+.team-clm{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 0px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+.team-clm:hover{
+    transform: scale(1.05);
+    background: crimson;
+
+}
+.team-clm img{  
+    height: 150px;
+    width: 150px;
+    border: 5px solid crimson;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.team-clm:hover img{
+    
+    border: 5px solid #fff;
+
+}
+.team-clm h3{  
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.team-clm p{
+    
+}
+
+
+/* skill-section */
+.skill-section{
+    padding: 100px 0px;
+}
+.skill-title{
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.skill-title h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+.skill-title p{
+    font-size: 20px;
+    
+}
+
+.skill-clm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.skill-content{
+    width: calc(50% - 30px);
+}
+.skill-content h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skill-content p{
+    text-align: justify;
+    line-height: 30px;
+}
+.skill-content a{
+    text-decoration: none;
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border: 2px solid crimson;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+.skill-section a:hover{
+    background-color: transparent;
+    color: crimson;
+}
+.skill-content .bar{
+    margin-bottom: 15px;
+}
+.skill-content .bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.bar .info span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.bar .line{
+    width: 100%;
+    height: 5px;
+    background-color: lightgrey;
+}
+.bar .line .html{
+    width: 80%;
+    height: 100%;
+    background-color:crimson;
+}
+.bar .line .css{
+     width: 60%;
+    height: 100%;
+    background-color:crimson;
+}
+.bar .line .js{
+     width: 80%;
+    height: 100%;
+    background-color:crimson;
+}
+.bar .line .php{
+     width: 50%;
+    height: 100%;
+    background-color:crimson;
+}
+.bar .line .mysql{
+     width: 70%;
+    height: 100%;
+    background-color:crimson;
+}
+
+
+/* contact-section */
+.contact-section{
+    padding: 100px 0px;
+}
+.contact-title{
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.contact-title h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+.contact-title p{
+    font-size: 20px;
+    color: crimson;
+}
+.contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-clm{
+    width: calc(50% - 30px);
+}
+.contact-clm h3{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact-clm p{
+    text-align: justify;
+    line-height: 25px;
+}
+.contact-clm .user-info{
+    display: flex;
+    align-items: center;
+    height: 65px;
+}
+.contact-clm .user-info i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact-clm .user-info div{
+    margin-left: 30px;
+}
+.contact-clm .user-info div h4{
+    font-size: 18px;
+}
+.contact-clm .user-info div span{
+    display: inline-block;
+    font-size: 16px;
+    font: 400;
+}
+
+/* emai-part */
+.contact-clm form{}
+
+.contact-clm .fields{
+    display: flex;
+}
+.contact-clm .fields .name{
+    margin-right: 40px;
+}
+
+.contact-clm .field, .contact-clm .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact-clm .field input, .contact-clm .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact-clm .textarea{
+    height: 80px;
+    width: 100%;
+}
+
+.contact-clm .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+.button-area{
+    margin-top: 10px;
+    display: inline-block;
+  
+}
+.contact-clm .button-area button{
+    color: #fff;
+    display: block;
+    width: 160px !important;
+    height: 45px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    background: crimson;
+    border: 2px solid crimson;
+    transition: all 0.5s ease;
+}
+
+.contact-clm .button-area:hover button{
+    background: #fff;
+   
+    color: crimson;
+}
+
+
+
+
+/* footer-section */
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center
+}
+footer div p{
+    font-size: 18px;
+}
+footer div p span{
+    color: crimson;
+}
+
